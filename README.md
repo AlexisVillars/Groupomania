@@ -13,9 +13,9 @@ Dans le dossier Backend :
 
 --Créer un fichier .env dans /Backend et complétez le :
 
-   ACCESS_TOKEN_SECRET = ...
+   ACCESS_TOKEN_SECRET = 
   
-   REFRESH_TOKEN_SECRET = ...
+   REFRESH_TOKEN_SECRET = 
    
   
 -- Lancer le serveur de développement avec :  nodemon server (port 5000)
