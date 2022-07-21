@@ -76,19 +76,6 @@ const Dashboard = () => {
         setUser(response.data);
     }
 
-    const deletePost = async (postId) => {
-        try {
-            if (window.confirm("Voulez-vous vraiment supprimer ce message ?")) {
-                await axios.delete(`http://localhost:5000/posts/id/${postId}`, {
-                    headers: { Authorization: `Bearer ${token}` }
-                });
-                // navigate("/profile", { replace: true }); 
-                window.location.reload();
-            }
-        } catch (error) {
-            console.log(error);
-        }
-    }
 
     const delUser = async (userId) => {
         try {
